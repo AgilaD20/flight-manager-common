@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "041ebc1b-3f10-4605-8848-2342aeadc244",
+		"name": "FSE2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "company-info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI1MzQyOTgsImV4cCI6MTY1MjU1MjI5OH0.dz0Gc75_sumILcPXYRJQobk-HleFYc3Si_N21cSsbdPnAbi1QvBljdwGx8c-T2xg-sai6m3JtipTq_E-v1d1Bg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/company-details-service/api/v1.0/market/company/info/K10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"company-details-service",
+						"api",
+						"v1.0",
+						"market",
+						"company",
+						"info",
+						"K10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "company-register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI1MzQyOTgsImV4cCI6MTY1MjU1MjI5OH0.dz0Gc75_sumILcPXYRJQobk-HleFYc3Si_N21cSsbdPnAbi1QvBljdwGx8c-T2xg-sai6m3JtipTq_E-v1d1Bg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"companyCode\": \"K10\",\r\n  \"companyName\": \"KFG\",\r\n  \"ceo\": \"Rocky Bhai\",\r\n  \"companyTurnOver\": 200000000,\r\n  \"companyWebsiteUrl\": \"https://kfg.com\",\r\n  \"stockExchange\": \"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/company-details-service/api/v1.0/market/company/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"company-details-service",
+						"api",
+						"v1.0",
+						"market",
+						"company",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userEmail\":\"anu@email\",\r\n    \"password\" : \"A999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/v1.0/gateway/market/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"v1.0",
+						"gateway",
+						"market",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-all-company",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI1MzQyOTgsImV4cCI6MTY1MjU1MjI5OH0.dz0Gc75_sumILcPXYRJQobk-HleFYc3Si_N21cSsbdPnAbi1QvBljdwGx8c-T2xg-sai6m3JtipTq_E-v1d1Bg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/company-details-service/api/v1.0/market/company/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"company-details-service",
+						"api",
+						"v1.0",
+						"market",
+						"company",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-stock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI1MzQyOTgsImV4cCI6MTY1MjU1MjI5OH0.dz0Gc75_sumILcPXYRJQobk-HleFYc3Si_N21cSsbdPnAbi1QvBljdwGx8c-T2xg-sai6m3JtipTq_E-v1d1Bg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/company-details-service/api/v1.0/market/company/add/B10?stock=45.92",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"company-details-service",
+						"api",
+						"v1.0",
+						"market",
+						"company",
+						"add",
+						"B10"
+					],
+					"query": [
+						{
+							"key": "stock",
+							"value": "45.92"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stock-series",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI1MzQyOTgsImV4cCI6MTY1MjU1MjI5OH0.dz0Gc75_sumILcPXYRJQobk-HleFYc3Si_N21cSsbdPnAbi1QvBljdwGx8c-T2xg-sai6m3JtipTq_E-v1d1Bg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/stock-manager-service/api/v1.0/market/stock/info/B10/2022-03-10/2022-05-15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"stock-manager-service",
+						"api",
+						"v1.0",
+						"market",
+						"stock",
+						"info",
+						"B10",
+						"2022-03-10",
+						"2022-05-15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stock-complete-info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI1MzQyOTgsImV4cCI6MTY1MjU1MjI5OH0.dz0Gc75_sumILcPXYRJQobk-HleFYc3Si_N21cSsbdPnAbi1QvBljdwGx8c-T2xg-sai6m3JtipTq_E-v1d1Bg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/stock-manager-service/api/v1.0/market/stock/get/B10/2022-05-14/2022-05-15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"stock-manager-service",
+						"api",
+						"v1.0",
+						"market",
+						"stock",
+						"get",
+						"B10",
+						"2022-05-14",
+						"2022-05-15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
