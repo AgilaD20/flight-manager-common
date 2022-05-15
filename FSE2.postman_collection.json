@@ -239,6 +239,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbnVAZW1haWwiLCJpYXQiOjE2NTI2MDg5NTAsImV4cCI6MTY1MjYyNjk1MH0.omOAAVXCuNKIrz-VuBTuOCMFYcJBVuPB-V6SUyyECsKfRhOKrxpGdCDhwdJsj4kc49Zc1y8eXZiGcaHGRiVBCQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/company-details-service/api/v1.0/market/company/delete/test-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"company-details-service",
+						"api",
+						"v1.0",
+						"market",
+						"company",
+						"delete",
+						"test-1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
